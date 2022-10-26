@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{CAD8CC
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FBA0A0A4-34EE-4F38-8D2D-7A18EACAC8F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBShop.Web", "LBShop.Web\LBShop.Web.csproj", "{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LBShop.Web", "LBShop.Web\LBShop.Web.csproj", "{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBShop.ProductAPI", "LBShop.ProductAPI\LBShop.ProductAPI.csproj", "{5087274D-73C1-44DF-8BB8-82947DCBF398}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5087274D-73C1-44DF-8BB8-82947DCBF398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5087274D-73C1-44DF-8BB8-82947DCBF398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5087274D-73C1-44DF-8BB8-82947DCBF398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5087274D-73C1-44DF-8BB8-82947DCBF398}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2} = {CAD8CC69-8D14-43BB-9BEB-EF0DCF26AAE5}
+		{5087274D-73C1-44DF-8BB8-82947DCBF398} = {FBA0A0A4-34EE-4F38-8D2D-7A18EACAC8F4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C1242A93-9671-4A40-933A-708365333272}
