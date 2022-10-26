@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Client", "Client", "{CAD8CC69-8D14-43BB-9BEB-EF0DCF26AAE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FBA0A0A4-34EE-4F38-8D2D-7A18EACAC8F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LBShop.Web", "LBShop.Web\LBShop.Web.csproj", "{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA2DA291-D4B3-4D9B-B3C4-B39F5CFFE8F2} = {CAD8CC69-8D14-43BB-9BEB-EF0DCF26AAE5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1242A93-9671-4A40-933A-708365333272}
+	EndGlobalSection
+EndGlobal
