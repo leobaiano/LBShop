@@ -27,8 +27,7 @@ builder.Services.AddSwaggerGen(options =>
     options.SwaggerDoc("v1", new OpenApiInfo
     {
         Version = "v1",
-        Title = "LB Shop",
-        Description = "Criação de Shop com Micro Serviço"
+        Title = "LBShop.ProductAPI",
     });
 });
 
