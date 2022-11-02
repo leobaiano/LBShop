@@ -19,15 +19,15 @@ namespace LBShop.ProductAPI.Controllers
         
         public async Task<ActionResult<IEnumerable<ProductVO>>> FindAll()
         {
-            var products = _repository.FindAll();
+            var products = await _repository.FindAll();
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<ProductVO>> FindById(long id) 
         {
-            var product = _repository.FindById(id);
-            if (product == null) return NotFound();
+            var product = await _repository.FindById(id);
+            if (product.Id <= 0) return NotFound();
             return Ok(product);
         }
     }
