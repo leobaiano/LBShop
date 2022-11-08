@@ -1,6 +1,7 @@
 ﻿using LBShop.Web.Models;
 using LBShop.Web.Services.IServices;
 using LBShop.Web.utils;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LBShop.Web.Services
 {
@@ -26,14 +27,14 @@ namespace LBShop.Web.Services
             return await response.ReadContentAs<ProductModel>();
         }
 
-        public async Task<ProductModel> CreateProduct(ProductModel model)
+        public async Task<ProductModel> CreateProduct([FromBody] ProductModel model)
         {
             var response = await _client.PostAsJson(BasePath, model);
             if (!response.IsSuccessStatusCode) throw new Exception("Something went wrong when calling API");
 
             return await response.ReadContentAs<ProductModel>();
         }
-        public async Task<ProductModel> UpdateProduct(ProductModel model)
+        public async Task<ProductModel> UpdateProduct([FromBody] ProductModel model)
         {
             var response = await _client.PutAsJsonAsync(BasePath, model);
             if (!response.IsSuccessStatusCode) throw new Exception("Something went wrong when calling API");
@@ -47,6 +48,5 @@ namespace LBShop.Web.Services
             if (!response.IsSuccessStatusCode) throw new Exception("Something went wrong when calling API");
             return await response.ReadContentAs<bool>();
         }
-    }
     }
 }
